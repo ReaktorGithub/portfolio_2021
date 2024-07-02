@@ -1,0 +1,88 @@
+.NavBar {
+  .nav__table {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    background: #fff;
+    border-radius: 0 0 10px 0;
+    padding: 20px 30px;
+    box-shadow: 2px 2px 6px 0 rgba(34, 60, 80, 0.2);
+    z-index: 1999;
+    transition: .25s;
+    margin-left: -100px;
+    overflow-y: hidden;
+
+    a {
+      text-decoration-line: none;
+      color: #d05214;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 20px 0 0;
+    }
+
+    .active {
+      color: #ef7e49;
+    }
+
+    hr {
+      width: 100%;
+    }
+
+    .content {
+
+      position: relative;
+
+      nav {
+        position: absolute;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .logo {
+        font-family: 'Josefin Sans', serif;
+        font-size: 1.5em;
+        color: #2c1f7c;
+        position: absolute;
+        top: 0;
+        right: 30px;
+        margin: 0;
+      }
+    }
+  }
+
+  .nav__burger {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    z-index: 2000;
+    cursor: pointer;
+
+    div {
+      width: 100%;
+      height: 2px;
+      background: rgba(98, 98, 98, 0.5);
+    }
+  }
+
+  .bg {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1998;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}

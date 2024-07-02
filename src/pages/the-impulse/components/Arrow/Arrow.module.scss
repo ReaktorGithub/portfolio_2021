@@ -1,0 +1,22 @@
+.arrow {
+
+  // ширина квадрата 50
+
+  width: 46px;
+  position: absolute;
+  z-index: 2;
+  transform-origin: -29px 50%;
+  margin: 21px 0 0 53px;
+}
+
+@media all and (max-width: 999px) {
+
+  .arrow {
+
+    // ширина квадрата 35
+
+    width: 33px;
+    transform-origin: -19px 50%;
+    margin: 15px 0 0 36px;
+  }
+}

@@ -1,0 +1,34 @@
+.Json {
+  width: 80%;
+  margin: 40px auto;
+
+  h1 {
+    text-align: center;
+  }
+
+  .table {
+    width: 100%;
+    border: 2px solid grey;
+    border-radius: 5px;
+    display: flex;
+
+    > div {
+      width: 50%;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: "Roboto Light", sans-serif;
+      font-size: 18px;
+      margin: 0;
+      line-height: 2em;
+      background: #ffefc7;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+  }
+}

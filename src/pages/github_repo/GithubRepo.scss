@@ -1,0 +1,27 @@
+.GithubRepo {
+    font-family: "Roboto Light", sans-serif;
+    margin: 30px auto;
+    width: 60%;
+    min-width: 450px;
+
+    h1 {
+        color: #1a4076;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #modal {
+        z-index: 999;
+        position: relative;
+    }
+
+    .mediaTags {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+

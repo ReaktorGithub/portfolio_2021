@@ -1,0 +1,141 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #b4dcff;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Russo One", sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  margin-top: 30px;
+}
+
+h2 {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+p, a {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.main {
+  width: 80%;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: #68a5db;
+  display: flex;
+  justify-content: space-between;
+}
+.main .game .field {
+  width: 500px;
+  height: 500px;
+  background: #28282e;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.main .game .controls {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.main .game .controls .btnTurnLeft {
+  width: 80px;
+  height: 50px;
+  background-color: #d59e35;
+  font-size: 1.4em;
+}
+.main .game .controls .btnTurnRight {
+  width: 80px;
+  height: 50px;
+  background-color: #d59e35;
+  font-size: 1.4em;
+  margin: 0 0 0 -116px;
+}
+.main .game .controls .btnPlay {
+  background-color: #408b40;
+  width: 100px;
+  height: 50px;
+  font-size: 1.4em;
+}
+
+.footer {
+  width: 80%;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+.footer p, .footer a {
+  font-size: 14px;
+}
+.footer p {
+  margin-left: 10px;
+}
+
+@media all and (max-width: 999px) {
+  p, a {
+    line-height: 120%;
+  }
+
+  .main {
+    width: 390px;
+    margin: 30px auto;
+    flex-direction: column;
+  }
+  .main .sidebar {
+    order: 1;
+  }
+  .main .sidebar .howTo {
+    display: none;
+  }
+  .main .game {
+    order: 0;
+  }
+  .main .game .field {
+    width: 350px;
+    height: 350px;
+  }
+  .main .game .controls {
+    width: 350px;
+  }
+  .main .game .controls .btnTurnRight {
+    margin: 0;
+  }
+
+  .footer {
+    width: 390px;
+    margin: 30px auto;
+  }
+}
+/*удалить!!!*/
+.cell {
+  width: 10%;
+  height: 10%;
+  background: green;
+}
+
+/*# sourceMappingURL=TheImpulse.module.css.map */

@@ -1,0 +1,40 @@
+.Item {
+  width: 100%;
+  padding: 5px 15px;
+
+  .content {
+    border: 1px solid #727272;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    h3 {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 1em;
+    }
+
+    button {
+      width: 40px;
+      height: 30px;
+      outline: none;
+      cursor: pointer;
+      border: none;
+      font-size: 1.4em;
+      color: white;
+    }
+
+    .red {
+      background: #ff3939;
+    }
+
+    .yellow {
+      background: #ffb700;
+    }
+
+    p {
+      font-size: 0.9em;
+    }
+  }
+}

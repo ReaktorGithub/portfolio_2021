@@ -1,0 +1,158 @@
+@mixin contentFit() {
+    width: 80%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+@mixin contentFitMobile() {
+    width: 390px;
+    margin: 30px auto;
+}
+
+@mixin btnTurn() {
+    width: 80px;
+    height: 50px;
+    background-color: #d59e35;
+    font-size: 1.4em;
+}
+
+.TheImpulse {
+
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #b4dcff;
+    height: 100vh;
+    padding-top: 30px;
+
+    button {
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    h1 {
+        font-family: "Russo One", sans-serif;
+        font-size: 22px;
+        font-weight: normal;
+        text-transform: uppercase;
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+        text-align: center;
+    }
+
+    h2 {
+        font-family: Roboto, sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        margin: 0;
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    }
+
+    p, a {
+        font-family: Roboto, sans-serif;
+        font-size: 18px;
+        line-height: 150%;
+    }
+
+    .main {
+
+        @include contentFit();
+        padding: 20px;
+        border-radius: 10px;
+        background: #68a5db;
+        display: flex;
+        justify-content: space-between;
+
+        .game {
+
+            .field {
+                width: 500px;
+                height: 500px;
+                background: #28282e;
+                margin-bottom: 20px;
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: flex-start;
+            }
+
+            .controls {
+                width: 500px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                .btnTurnLeft {
+                    @include btnTurn();
+                }
+
+                .btnTurnRight {
+                    @include btnTurn();
+                    margin: 0 0 0 -116px;
+                }
+
+                .btnPlay {
+                    background-color: #408b40;
+                    width: 100px;
+                    height: 50px;
+                    font-size: 1.4em;
+                }
+            }
+        }
+    }
+
+    .footer {
+        @include contentFit();
+
+        p, a {
+            font-size: 14px;
+        }
+
+        p {
+            margin-left: 10px;
+        }
+    }
+}
+
+@media all and (max-width: 999px) {
+
+    .TheImpulse {
+
+        p, a {
+            line-height: 120%;
+        }
+
+        .main {
+            @include contentFitMobile();
+            flex-direction: column;
+
+            .sidebar {
+                order: 1;
+
+                .howTo {
+                    display: none;
+                }
+            }
+            .game {
+                order: 0;
+
+                .field {
+                    width: 350px;
+                    height: 350px;
+                }
+
+                .controls {
+                    width: 350px;
+
+                    .btnTurnRight {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .footer {
+            @include contentFitMobile();
+        }
+    }
+
+}

@@ -1,0 +1,75 @@
+.Todo h1 {
+  text-align: center;
+}
+.Todo p {
+  font-family: "Roboto Light", sans-serif;
+  color: #313131;
+}
+.Todo .grid {
+  display: grid;
+  width: 85%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 0.7fr;
+  grid-template-rows: repeat(4, auto);
+}
+.Todo .grid > div {
+  padding: 1rem;
+}
+.Todo .grid .controls {
+  grid-column: 1/4;
+}
+.Todo .grid .controls form label {
+  color: white;
+}
+.Todo .grid .todos_IU {
+  /*background: #d01a14;*/
+}
+.Todo .grid .todos_INU {
+  /*background: #ee8025;*/
+}
+.Todo .grid .todos_UU {
+  /*background: #259aee;*/
+}
+.Todo .grid .todos_UNU {
+  /*background: #2cee25;*/
+}
+.Todo .grid .todos_other {
+  /*background: rgb(98, 98, 98);*/
+  grid-column: 1/3;
+}
+.Todo .grid .done {
+  /*background: #a86500;*/
+  grid-column: 3/4;
+  grid-row: 2/5;
+}
+@media all and (max-width: 1100px) {
+  .Todo .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+  }
+  .Todo .grid .controls {
+    grid-column: 1/3;
+  }
+  .Todo .grid .done {
+    grid-column: 1/3;
+    grid-row: auto;
+  }
+}
+@media all and (max-width: 600px) {
+  .Todo .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .Todo .grid .controls {
+    grid-column: auto;
+  }
+  .Todo .grid .todos_other {
+    grid-column: auto;
+  }
+  .Todo .grid .done {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

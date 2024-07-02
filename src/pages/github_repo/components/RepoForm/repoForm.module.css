@@ -1,0 +1,25 @@
+.form {
+    display: flex;
+    width: 80%;
+    margin: 35px auto 0;
+    justify-content: space-between;
+}
+
+.inputs {
+    width: 60%;
+}
+
+.button {
+    width: 30%;
+}
+
+.picture {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.picture img {
+    max-width: 250px;
+}
